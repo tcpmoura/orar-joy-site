@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orar Joy</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        /* Estilo personalizado para o fundo e cores base (Laranja e Marrom) */
+        body {
+            background-color: #F5E6CC; /* Um laranja bem claro, quase pêssego */
+            font-family: 'Inter', sans-serif; /* Usando a fonte Inter */
+            display: flex;
+            justify-content: center;
+            align-items: flex-start; /* Alinhar ao topo */
+            min-height: 100vh; /* Altura mínima da tela */
+            padding: 20px; /* Espaçamento interno */
+        }
+        .container {
+            background-color: #ffffff; /* Fundo branco para o conteúdo */
+            padding: 24px; /* Espaçamento interno */
+            border-radius: 12px; /* Cantos arredondados */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+            max-width: 400px; /* Largura máxima para mobile */
+            width: 100%; /* Ocupa a largura total disponível */
+            text-align: center; /* Centralizar texto */
+        }
+        .btn {
+            display: flex; /* Usar flexbox para alinhar ícone e texto */
+            align-items: center; /* Centralizar verticalmente */
+            justify-content: center; /* Centralizar horizontalmente */
+            width: 100%; /* Largura total do botão */
+            padding: 12px 20px; /* Espaçamento interno */
+            margin-bottom: 16px; /* Espaço entre botões */
+            background-color: #CD853F; /* Cor laranja/marrom para os botões */
+            color: #ffffff; /* Texto branco para contraste */
+            border-radius: 8px; /* Cantos arredondados */
+            text-decoration: none; /* Remover sublinhado */
+            font-size: 16px; /* Tamanho da fonte */
+            font-weight: bold; /* Negrito */
+            transition: background-color 0.3s ease; /* Transição suave */
+            cursor: pointer; /* Cursor de ponteiro */
+        }
+        .btn:hover {
+            background-color: #FFFF00; /* Cor amarela ao passar o mouse */
+            color: #4B5563; /* Texto cinza escuro para contraste no hover */
+        }
+         .btn i { /* Estilo para os ícones do Font Awesome */
+            margin-right: 8px; /* Espaço entre o ícone e o texto */
+        }
+        .coming-soon {
+            margin-top: 20px;
+            font-size: 14px;
+            color: #6b7280; /* Cor de texto cinza */
+        }
+        .logo {
+            margin-bottom: 20px;
+            max-width: 150px; /* Tamanho máximo do logo */
+            height: auto; /* Altura automática para manter a proporção */
+            border-radius: 8px; /* Cantos arredondados para o logo */
+        }
+        /* Estilo para o rodapé profissional */
+        .footer {
+            margin-top: 32px; /* Espaço acima do rodapé */
+            padding-top: 16px; /* Espaçamento interno superior */
+            border-top: 1px solid #D2B48C; /* Borda superior sutil em tom marrom claro */
+            font-size: 13px; /* Tamanho da fonte ligeiramente maior */
+            color: #A0522D; /* Cor de texto marrom */
+        }
+        .tiktok-link {
+            display: inline-block;
+            margin-top: 20px;
+            color: #A0522D; /* Cor do texto marrom */
+            font-size: 14px;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        .tiktok-link:hover {
+            color: #CD853F; /* Cor laranja/marrom ao passar o mouse */
+        }
+         .tiktok-link i {
+            margin-right: 4px;
+        }
+        .highlight-oration {
+            margin-top: 20px;
+            margin-bottom: 16px;
+            font-size: 15px;
+            color: #A0522D; /* Cor do texto marrom */
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="Logo tati.png" alt="Logo Orar Joy" class="logo mx-auto" onerror="this.onerror=null; this.src='https://placehold.co/150x150/E5E7EB/4B5563?text=Logo'">
+
+        <h1 class="text-2xl font-bold mb-4 text-gray-800">Bem-vindo(a) ao Orar Joy</h1>
+
+        <p class="text-gray-600 mb-8">Aqui você encontra orações e produtos abençoados para fortalecer sua fé.</p>
+
+        <a href="https://amzn.to/3GKaiT2" class="btn">
+            <i class="fas fa-pray"></i> Terço de Nossa Senhora
+        </a>
+
+        <a href="https://amzn.to/434JRit" class="btn">
+            <i class="fas fa-book"></i> Autobiografia do Papa Francisco
+        </a>
+
+        <a href="https://amzn.to/3H52rPW" class="btn">
+             <i class="fas fa-book"></i> Livro “Café com Deus Pai 2025”
+        </a>
+
+        <p class="highlight-oration">Peça sua oração personalizada:</p>
+        <a href="https://forms.gle/vst57GJ1cvyNyg848" class="btn">
+            <i class="fas fa-hands-praying"></i> Peça sua oração personalizada
+        </a>
+
+        <p class="coming-soon">
+            <i class="fas fa-tshirt"></i> Camiseta do Orar Joy (em breve)
+        </p>
+
+        <a href="https://tiktok.com/@orar.joy" class="tiktok-link">
+            <i class="fab fa-tiktok"></i> Visite nosso TikTok
+        </a>
+
+        <footer class="footer">
+            <p>&copy; 2025 Orar Joy - Todos os direitos reservados.</p>
+        </footer>
+    </div>
+</body>
+</html>
