@@ -7,87 +7,87 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
-        /* Estilo personalizado para o fundo e cores base (Laranja e Marrom) */
+        /* Estilos personalizados para o corpo e cores base (Laranja e Marrom) */
         body {
-            background-color: #F5E6CC; /* Um laranja bem claro, quase pêssego */
-            font-family: 'Inter', sans-serif; /* Usando a fonte Inter */
+            background-color: #F5E6CC; /* Um laranja bem claro, quase pêssego, para o fundo */
+            font-family: 'Inter', sans-serif; /* Usando a fonte Inter para legibilidade */
             display: flex;
-            justify-content: center;
-            align-items: flex-start; /* Alinhar ao topo */
-            min-height: 100vh; /* Altura mínima da tela */
-            padding: 20px; /* Espaçamento interno */
+            justify-content: center; /* Centraliza o conteúdo horizontalmente */
+            align-items: flex-start; /* Alinha o conteúdo ao topo da tela */
+            min-height: 100vh; /* Garante que o corpo ocupe a altura total da viewport */
+            padding: 20px; /* Espaçamento interno ao redor do contêiner principal */
         }
         .container {
-            background-color: #ffffff; /* Fundo branco para o conteúdo */
-            padding: 24px; /* Espaçamento interno */
-            border-radius: 12px; /* Cantos arredondados */
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
-            max-width: 400px; /* Largura máxima para mobile */
-            width: 100%; /* Ocupa a largura total disponível */
-            text-align: center; /* Centralizar texto */
+            background-color: #ffffff; /* Fundo branco para o bloco de conteúdo */
+            padding: 24px; /* Espaçamento interno dentro do contêiner */
+            border-radius: 12px; /* Cantos arredondados para o contêiner */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave para profundidade */
+            max-width: 400px; /* Largura máxima para otimização em dispositivos móveis */
+            width: 100%; /* Ocupa a largura total disponível até o max-width */
+            text-align: center; /* Centraliza o texto dentro do contêiner */
         }
         .btn {
-            display: flex; /* Usar flexbox para alinhar ícone e texto */
-            align-items: center; /* Centralizar verticalmente */
-            justify-content: center; /* Centralizar horizontalmente */
-            width: 100%; /* Largura total do botão */
-            padding: 12px 20px; /* Espaçamento interno */
-            margin-bottom: 16px; /* Espaço entre botões */
-            background-color: #CD853F; /* Cor laranja/marrom para os botões */
-            color: #ffffff; /* Texto branco para contraste */
-            border-radius: 8px; /* Cantos arredondados */
-            text-decoration: none; /* Remover sublinhado */
-            font-size: 16px; /* Tamanho da fonte */
-            font-weight: bold; /* Negrito */
-            transition: background-color 0.3s ease; /* Transição suave */
-            cursor: pointer; /* Cursor de ponteiro */
+            display: flex; /* Usa flexbox para alinhar ícone e texto */
+            align-items: center; /* Centraliza verticalmente os itens */
+            justify-content: center; /* Centraliza horizontalmente os itens */
+            width: 100%; /* O botão ocupa a largura total do contêiner */
+            padding: 12px 20px; /* Espaçamento interno do botão */
+            margin-bottom: 16px; /* Espaço abaixo de cada botão */
+            background-color: #CD853F; /* Cor laranja/marrom para o fundo do botão */
+            color: #ffffff; /* Cor do texto do botão (branco) */
+            border-radius: 8px; /* Cantos arredondados para os botões */
+            text-decoration: none; /* Remove o sublinhado padrão dos links */
+            font-size: 16px; /* Tamanho da fonte do botão */
+            font-weight: bold; /* Texto do botão em negrito */
+            transition: background-color 0.3s ease; /* Transição suave na mudança de cor de fundo */
+            cursor: pointer; /* Muda o cursor para indicar que é clicável */
         }
         .btn:hover {
             background-color: #FFFF00; /* Cor amarela ao passar o mouse */
-            color: #4B5563; /* Texto cinza escuro para contraste no hover */
+            color: #4B5563; /* Cor do texto cinza escuro para contraste no hover */
         }
-         .btn i { /* Estilo para os ícones do Font Awesome */
-            margin-right: 8px; /* Espaço entre o ícone e o texto */
+         .btn i { /* Estilo para os ícones do Font Awesome dentro dos botões */
+            margin-right: 8px; /* Espaço entre o ícone e o texto do botão */
         }
         .coming-soon {
             margin-top: 20px;
             font-size: 14px;
-            color: #6b7280; /* Cor de texto cinza */
+            color: #6b7280; /* Cor de texto cinza para o item "em breve" */
         }
         .logo {
             margin-bottom: 20px;
-            max-width: 150px; /* Tamanho máximo do logo */
-            height: auto; /* Altura automática para manter a proporção */
+            max-width: 150px; /* Tamanho máximo para o logo */
+            height: auto; /* Altura automática para manter a proporção da imagem */
             border-radius: 8px; /* Cantos arredondados para o logo */
         }
         /* Estilo para o rodapé profissional */
         .footer {
             margin-top: 32px; /* Espaço acima do rodapé */
-            padding-top: 16px; /* Espaçamento interno superior */
+            padding-top: 16px; /* Espaçamento interno superior do rodapé */
             border-top: 1px solid #D2B48C; /* Borda superior sutil em tom marrom claro */
-            font-size: 13px; /* Tamanho da fonte ligeiramente maior */
-            color: #A0522D; /* Cor de texto marrom */
+            font-size: 13px; /* Tamanho da fonte ligeiramente maior para o rodapé */
+            color: #A0522D; /* Cor de texto marrom para o rodapé */
         }
         .tiktok-link {
-            display: inline-block;
+            display: inline-block; /* Permite aplicar margens e padding */
             margin-top: 20px;
-            color: #A0522D; /* Cor do texto marrom */
+            color: #A0522D; /* Cor do texto marrom para o link do TikTok */
             font-size: 14px;
-            text-decoration: none;
-            transition: color 0.3s ease;
+            text-decoration: none; /* Remove o sublinhado padrão */
+            transition: color 0.3s ease; /* Transição suave na mudança de cor */
         }
         .tiktok-link:hover {
-            color: #CD853F; /* Cor laranja/marrom ao passar o mouse */
+            color: #CD853F; /* Cor laranja/marrom ao passar o mouse no link do TikTok */
         }
          .tiktok-link i {
-            margin-right: 4px;
+            margin-right: 4px; /* Espaço entre o ícone e o texto do link do TikTok */
         }
         .highlight-oration {
             margin-top: 20px;
             margin-bottom: 16px;
             font-size: 15px;
-            color: #800000; /* Cor vermelha escura (vinho) */
-            font-weight: bold;
+            color: #800000; /* Cor vermelha escura (vinho) para o texto de destaque */
+            font-weight: bold; /* Texto em negrito */
         }
     </style>
 </head>
@@ -104,25 +104,21 @@
             <i class="fas fa-hands-praying"></i> Peça sua oração personalizada
         </a>
 
+        <a href="https://amzn.to/3HfiWcy" class="btn">
+            <i class="fas fa-book-open"></i> Livro: Todo mundo tem um anjo da guarda
+        </a>
+
+        <a href="https://amzn.to/3Hmx1F5" class="btn">
+            <i class="fas fa-book-reader"></i> Livro: Você pode falar com Deus: Princípios para uma oração eficaz
+        </a>
+
+        <a href="https://amzn.to/3ZIAyDK" class="btn">
+            <i class="fas fa-cross"></i> Terço Feminino Dourado Rosario Crucifixo Banhado Ouro
+        </a>
+
         <a href="https://amzn.to/4j8NHwQ" class="btn">
             <i class="fas fa-headphones"></i> Fones de ouvido para ouvir nossas orações
         </a>
-
-        <a href="https://amzn.to/3GKaiT2" class="btn">
-            <i class="fas fa-pray"></i> Terço de Nossa Senhora
-        </a>
-
-        <a href="https://amzn.to/434JRit" class="btn">
-            <i class="fas fa-book"></i> Autobiografia do Papa Francisco
-        </a>
-
-        <a href="https://amzn.to/3H52rPW" class="btn">
-             <i class="fas fa-book"></i> Livro Café com Deus Pai 2025
-        </a>
-
-        <p class="coming-soon">
-            <i class="fas fa-tshirt"></i> Camiseta do Orar Joy (em breve)
-        </p>
 
         <a href="https://tiktok.com/@orar.joy" class="tiktok-link">
             <i class="fab fa-tiktok"></i> Visite nosso TikTok
